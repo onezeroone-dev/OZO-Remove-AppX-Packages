@@ -1,7 +1,7 @@
-#Requires -Modules @{ModuleName="OZO";ModuleVersion="1.4.0"},@{ModuleName="OZOLogger";ModuleVersion="1.1.0"} -RunAsAdministrator
+#Requires -Modules @{ModuleName="OZO";ModuleVersion="1.5.0"},@{ModuleName="OZOLogger";ModuleVersion="1.1.0"} -RunAsAdministrator
 
 <#PSScriptInfo
-    .VERSION 1.0.0
+    .VERSION 1.0.1
     .GUID 26313204-248b-4816-89de-4c605134b2ca
     .AUTHOR Andy Lievetz <alievertz@onezeroone.dev>
     .COMPANYNAME One Zero One
@@ -30,10 +30,6 @@
 Param(
     [Parameter(Mandatory=$true,HelpMessage="A comma-separated list of packages to remove")][Array] $Packages
 )
-
-Function Get-OZOUserInteractive {
-    return [Environment]::UserInteractive
-}
 
 # MAIN
 # Variables
